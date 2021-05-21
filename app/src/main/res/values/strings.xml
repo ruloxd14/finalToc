@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">projectoToc</string>
+    <string name="title_home">Perfil</string>
+    <string name="title_dashboard">Actividades</string>
+    <string name="title_notifications">Extras</string>
+    <string name="correo">Correo electroníco</string>
+    <string name="contra">contraseña</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="sesion_face">Inicie sesión con Facebook</string>
+    <string name="sesion_google">Inicie sesión con Google</string>
+    <string name="registrarse">Regístrarse</string>
+    <string name="nombre">Nombre</string>
+    <string name="verificar_contra">Verificar contraseña</string>
+    <string name="inicio">Inicio</string>
+    <string name="semanas">Semanas</string>
+    <string name="semana">Semana</string>
+    <string name="material_extra">Material extra</string>
+    <string name="configuracion">Configuración</string>
+    <string name="ver">ver mas</string>
+    <string name="arte">Arte</string>
+    <string name="ocio">Ocio</string>
+    <string name="lectura">Lectura</string>
+    <string name="fisico">Fisico</string>
+    <string name="semanaButon1">Semana 01-07</string>
+    <string name="semanaButon2">Semana 08-14</string>
+    <string name="semanaButon3">Semana 15-21</string>
+    <string name="semanaButon4">Semana 22-28</string>
+    <string name="semanaButon5">Semana 29-31</string>
+    <string name="marzo">Marzo</string>
+    <string name="diaActividad1">Lunes 29 de Marzo</string>
+    <string name="Actividad1">En la siguiente actividad la persona deberá buscar diferentes objetos de diferentes imágenes.</string>
+    <string name="Actividad1.1">Encuentra los objetos</string>
+    <string name="diaActividad2">Miercoles 31 de Marzo</string>
+    <string name="Actividad2">Las actividades a realizar en mesa tendrán que estar acompañadas de una buena postura:</string>
+    <string name="descargar">Descargar material</string>
+    <string name="dibujo">Dibujo</string>
+    <string name="dibujoact">Pedro debe pintar su casa, Ayudalo a pintar.</string>
+    <string name="baile">Baile</string>
+    <string name="baileact">¿Te gusta bailar? aprende algunos paso.</string>
+    <string name="rom">Rompecabezas</string>
+    <string name="romact">Creemos  un rompecabezas personalizado.</string>
+    <string name="romact2">Creemos un rompecabezas personalizado. Material:Imagen impresa Plantilla de rompecabezas Tijeras pegamento Cartón o papel grueso Instrucciones -Debes imprimir la plantilla que esta en la actividad e imprimir un fotografía o imagen.-Recortaras el </string>
+    <string name="oca">Juego de la oca</string>
+    <string name="ocaact">Juguemos al juego de la oca en grupo.</string>
+    <string name="paco">Paco el Chato</string>
+    <string name="pacoact">Había una vez en un rancho conocido como "7 vacas" un niño que se llamaba Paco el Chato.</string>
+    <string name="pacoact2">Había una vez en un rancho conocido como "7 vacas" un niño que se llamaba Paco el Chato, Paco el Chato vivía ahí desde su nacimiento, al cumplir seis años Paco debía de entrar a la escuela.</string>
+    <string name="cuento">Cuento de la zorra y la cigüeña</string>
+    <string name="cuentoact">Hacía mucho tiempo que la zorra y la cigüeña no se veían y un día se encontraron por casualidad.</string>
+    <string name="animales">Animales</string>
+    <string name="animalesact">Juguemos a ser un cangrejo.Desplázate como un cangrejo u otros animales.</string>
+    <string name="animalesact2">Juguemos a ser un cangrejo. Desplázate como un cangrejo u otros animales. Ejemplo de animales:Canguro Rana Oso Pájaro Conejo</string>
+    <string name="soga">Tiro de soga</string>
+    <string name="sogaact">Agarrar una frazada o soga y jugar a tirar de un lado y del otro.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

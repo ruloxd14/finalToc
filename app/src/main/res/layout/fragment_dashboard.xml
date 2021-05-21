@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azulBajo"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+
+    <TextView
+        android:id="@+id/horario_mes"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="249dp"
+        android:text="@string/marzo"
+        android:textColor="@color/azulFuerte"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/botonsemana1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/semanaButon1"
+        android:background="@drawable/round_button_base"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="textStart"
+        android:layout_marginTop="43dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"/>
+
+    <Button
+        android:id="@+id/botonsemana2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/semanaButon2"
+        android:background="@drawable/round_button_base"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="textStart"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"/>
+
+    <Button
+        android:id="@+id/botonsemana3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/semanaButon3"
+        android:background="@drawable/round_button_base"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="textStart"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"/>
+
+    <Button
+        android:id="@+id/botonsemana4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/semanaButon4"
+        android:background="@drawable/round_button_base"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="textStart"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"/>
+
+    <Button
+        android:id="@+id/botonsemana5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/semanaButon5"
+        android:background="@drawable/round_button_activo"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="textStart"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "129447376151",
+    "project_id": "finaltoc-71fe8",
+    "storage_bucket": "finaltoc-71fe8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129447376151:android:24c423e2122b0472fcf352",
+        "android_client_info": {
+          "package_name": "gutierrezmorquecho.luis.finaltoc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129447376151-n7so3792hte93nkugbi38qbth17k7vld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi7sKL6gghUoa0zz1wRjpjU4ZJ7k8xtLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129447376151-n7so3792hte93nkugbi38qbth17k7vld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

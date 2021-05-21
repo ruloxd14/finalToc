@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azulBajo"
+    android:orientation="vertical"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <TextView
+        android:id="@+id/materia_extra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/material_extra"
+        android:textStyle="bold"
+        android:textColor="@color/azulFuerte"
+        android:textSize="40sp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="113dp"
+        />
+    <Button
+        android:id="@+id/botonarte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/arte"
+        android:background="@drawable/round_button_base"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="textStart"
+        android:layout_marginTop="43dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"/>
+
+    <Button
+        android:id="@+id/botonocio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ocio"
+        android:background="@drawable/round_button_base"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="textStart"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"/>
+
+    <Button
+        android:id="@+id/botonlectura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lectura"
+        android:background="@drawable/round_button_base"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="textStart"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"/>
+
+    <Button
+        android:id="@+id/botonfisico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fisico"
+        android:background="@drawable/round_button_base"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="textStart"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"/>
+
+</LinearLayout>

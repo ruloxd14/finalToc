@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/azulFuerte"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Restablecer_contrasena">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo_blanco" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/correo"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/white"
+        android:hint="@string/correo"
+        />
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_restablecer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:textColor="@color/azulFuerte"
+        android:text="Restablecer contraseña"
+        android:background="@drawable/round_button"
+        />
+
+</LinearLayout>

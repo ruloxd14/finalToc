@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/azulBajo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_config">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/azulFuerte"
+        android:layout_marginTop="20sp"
+        android:text="Configuraciones" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/azulFuerte"
+        android:layout_marginTop="110sp"
+        android:text="Notificaciones" />
+
+    <TextView
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="130sp"
+        android:text="Abrir configuración del sistema"
+        android:textColor="@color/colorLetra"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/azulFuerte"
+        android:layout_marginTop="200sp"
+        android:text="Tema de la aplicación" />
+
+    <TextView
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="220sp"
+        android:text="Seleccionar tema"
+        android:textColor="@color/colorLetra"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/azulFuerte"
+        android:layout_marginTop="260sp"
+        android:text="Accesibilidad" />
+
+    <TextView
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="280sp"
+        android:text="Modo daltónico"
+        android:textColor="@color/colorLetra"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/azulFuerte"
+        android:layout_marginTop="320sp"
+        android:text="General" />
+
+    <TextView
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="370sp"
+        android:text="Perfil"
+        android:textColor="@color/colorLetra"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="400sp"
+        android:text="Eliminar cuenta"
+        android:textColor="@color/colorLetra"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="430sp"
+        android:text="Acerca de TOC"
+        android:textColor="@color/colorLetra"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="460sp"
+        android:text="Informar sobre error"
+        android:textColor="@color/colorLetra"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_cerrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="490sp"
+        android:background="@color/azulBajo"
+        android:text="Cerrar sesión"
+        android:textColor="@color/colorLetra"
+        android:textSize="15sp" />
+
+</FrameLayout>
