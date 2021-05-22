@@ -15,7 +15,7 @@
         android:layout_height="120dp"
         android:scaleType="centerInside"
         android:src="@drawable/logo_blanco" />
-
+<!--
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
         android:textColor="@color/white"
         android:hint="nombre"
         />
-
+-->
 
     <TextView
         android:layout_width="match_parent"
@@ -66,6 +66,7 @@
         android:id="@+id/txtContraReg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:layout_marginHorizontal="30dp"
         android:textColor="@color/white"
         android:hint="contraseña"
@@ -84,6 +85,7 @@
         android:id="@+id/txtVerificarContra"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:layout_marginHorizontal="30dp"
         android:textColor="@color/white"
         android:hint="repetir contraseña"

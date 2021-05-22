@@ -10,11 +10,17 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import gutierrezmorquecho.luis.finaltoc.ui.home.HomeFragment
 import kotlinx.android.synthetic.main.activity_log_in.*
 
 
 class Log_in : AppCompatActivity() {
+
+    private lateinit var auth: FirebaseAuth
+
     val RC_SIGN_IN = 123
     val COD_LOGOUT = 321
     lateinit var mGoogleSignInClient: GoogleSignInClient
@@ -22,6 +28,8 @@ class Log_in : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in)
+
+        auth = Firebase.auth
 
         // Configure sign-in to request the user's ID, email address, and basic
 // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
@@ -50,6 +58,11 @@ class Log_in : AppCompatActivity() {
             startActivity(intent)
         }
 
+        tv_olvidasteContra.setOnClickListener {
+            var intent: Intent = Intent(this, Restablecer_contrasena::class.java)
+            startActivity(intent)
+        }
+
 
     }
 
@@ -58,17 +71,13 @@ class Log_in : AppCompatActivity() {
         var contra: String = txtContra.text.toString()
 
         if(!correo.isNullOrBlank() && !contra.isNullOrBlank()){
-            Toast.makeText(this, "Se ingreso a la App correctamente!",
-                Toast.LENGTH_SHORT).show()
-            var intent: Intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            //ingresaFirebase(correo, contra)
+            ingresaFirebase(correo, contra)
         }else{
             Toast.makeText(this, "Ingresar datos",
                 Toast.LENGTH_SHORT).show()
         }
     }
-/*
+
     private fun ingresaFirebase(email: String, password: String){
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
@@ -83,13 +92,13 @@ class Log_in : AppCompatActivity() {
                 } else {
                     // If sign in fails, display a message to the user.
 
-                    Toast.makeText(baseContext, "Authentication failed.",
+                    Toast.makeText(baseContext, "Error al ingresar a la App",
                         Toast.LENGTH_SHORT).show()
                     //updateUI(null)
                 }
             }
     }
-*/
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
