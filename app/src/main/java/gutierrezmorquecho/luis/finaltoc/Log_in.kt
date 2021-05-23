@@ -15,9 +15,14 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import gutierrezmorquecho.luis.finaltoc.ui.home.HomeFragment
 import kotlinx.android.synthetic.main.activity_log_in.*
+import com.facebook.CallbackManager
 
 
-class Log_in : AppCompatActivity() {
+
+
+
+public class Log_in : AppCompatActivity() {
+
 
     private lateinit var auth: FirebaseAuth
 
@@ -28,6 +33,7 @@ class Log_in : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in)
+
 
         auth = Firebase.auth
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">projectoToc</string>
+    <string name="app_name">proyectoToc</string>
     <string name="title_home">Perfil</string>
     <string name="title_dashboard">Actividades</string>
     <string name="title_notifications">Extras</string>
@@ -54,6 +54,8 @@
     <string name="sogaact">Agarrar una frazada o soga y jugar a tirar de un lado y del otro.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">1231044950683941</string>
+    <string name="fb_login_protocol_scheme">fb1231044950683941</string>
 
 
 </resources>
