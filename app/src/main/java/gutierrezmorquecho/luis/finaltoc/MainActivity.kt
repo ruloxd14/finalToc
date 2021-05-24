@@ -1,5 +1,6 @@
 package gutierrezmorquecho.luis.finaltoc
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import gutierrezmorquecho.luis.finaltoc.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +20,13 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+
+        idVerNotas.setOnClickListener {
+            var intent: Intent = Intent(this, Nota_main::class.java)
+            startActivity(intent)
+        }
 
         val navView: BottomNavigationView = binding.navView
 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azulBajo"
+    android:orientation="vertical"
+    tools:context=".addNotesActivity">
+
+    <TextView
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="249dp"
+        android:text="@string/notas"
+        android:textColor="@color/azulFuerte"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etTittleNote_addNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titulo"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/etContenidoNote_addNotes"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:gravity="top"
+        android:hint="Escribir nota..."
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/btnGuardar_addNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/azulFuerte"
+        android:textColor="@color/white"
+        android:text="Guardar"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

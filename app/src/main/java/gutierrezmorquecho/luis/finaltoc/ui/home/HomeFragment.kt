@@ -7,8 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
+import gutierrezmorquecho.luis.finaltoc.Nota_main
+import gutierrezmorquecho.luis.finaltoc.R
 import gutierrezmorquecho.luis.finaltoc.databinding.FragmentHomeBinding
 import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_home.view.*
+
 
 class HomeFragment : Fragment() {
 
@@ -24,18 +29,34 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        val nav = Navigation.createNavigateOnClickListener(R.id.nav_home_to_notes)
+
+
+        root.idVerNotas.setOnClickListener {
+            nav.onClick(it)
+        }
+
+
         //val textView: TextView = binding.textHome
         //homeViewModel.text.observe(viewLifecycleOwner, Observer {
             //textView.text = it
         //})
         return root
+/*
+        idVerNotas.setOnClickListener {
+            val intent = Intent(activity, Nota_main::class.java)
+            activity?.startActivity(intent)
+        }
+*/
 
+/*
         val args = arguments
         if (args != null){
             val name = args!!.getString("name")
@@ -45,11 +66,9 @@ class HomeFragment : Fragment() {
 
         }
 
-
-
+ */
 
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()

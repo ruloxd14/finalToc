@@ -20,56 +20,57 @@
         android:layout_marginTop="38dp"
         android:layout_marginEnd="113dp"
         />
+
     <Button
         android:id="@+id/botonarte"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/arte"
-        android:background="@drawable/round_button_base"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textAlignment="textStart"
-        android:layout_marginTop="43dp"
+        android:layout_height="74dp"
         android:layout_marginStart="49dp"
-        android:layout_marginEnd="49dp"/>
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="49dp"
+        android:backgroundTint="@color/azulFuerte"
+        android:text="@string/arte"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/botonocio"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/ocio"
-        android:background="@drawable/round_button_base"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textAlignment="textStart"
-        android:layout_marginTop="29dp"
+        android:layout_height="72dp"
         android:layout_marginStart="49dp"
-        android:layout_marginEnd="49dp"/>
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="49dp"
+        android:backgroundTint="@color/azulFuerte"
+        android:text="@string/ocio"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/botonlectura"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lectura"
-        android:background="@drawable/round_button_base"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textAlignment="textStart"
-        android:layout_marginTop="29dp"
+        android:layout_height="72dp"
         android:layout_marginStart="49dp"
-        android:layout_marginEnd="49dp"/>
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="49dp"
+        android:backgroundTint="@color/azulFuerte"
+        android:text="@string/lectura"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/botonfisico"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/fisico"
-        android:background="@drawable/round_button_base"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textAlignment="textStart"
-        android:layout_marginTop="29dp"
+        android:layout_height="71dp"
         android:layout_marginStart="49dp"
-        android:layout_marginEnd="49dp"/>
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="49dp"
+        android:backgroundTint="@color/azulFuerte"
+        android:text="@string/fisico"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
 
 </LinearLayout>

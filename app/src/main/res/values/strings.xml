@@ -19,6 +19,7 @@
     <string name="ver">ver mas</string>
     <string name="arte">Arte</string>
     <string name="ocio">Ocio</string>
+    <string name="notas">Notas</string>
     <string name="lectura">Lectura</string>
     <string name="fisico">Fisico</string>
     <string name="semanaButon1">Semana 01-07</string>
@@ -56,6 +57,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="facebook_app_id">1231044950683941</string>
     <string name="fb_login_protocol_scheme">fb1231044950683941</string>
+    <string name="menu_notas">Notas</string>
 
 
 </resources>
