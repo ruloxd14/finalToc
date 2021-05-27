@@ -97,6 +97,7 @@
         android:textColor="@color/colorLetra"
         android:textSize="20sp" />
     <TextView
+        android:id="@+id/acercaToc"
         android:layout_width="208dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"

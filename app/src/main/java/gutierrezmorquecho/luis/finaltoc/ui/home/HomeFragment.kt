@@ -1,6 +1,7 @@
 package gutierrezmorquecho.luis.finaltoc.ui.home
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -36,37 +37,22 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val nav = Navigation.createNavigateOnClickListener(R.id.nav_home_to_notes)
-
-
-        root.idVerNotas.setOnClickListener {
-            nav.onClick(it)
-        }
-
 
         //val textView: TextView = binding.textHome
         //homeViewModel.text.observe(viewLifecycleOwner, Observer {
             //textView.text = it
         //})
-        return root
-/*
-        idVerNotas.setOnClickListener {
-            val intent = Intent(activity, Nota_main::class.java)
-            activity?.startActivity(intent)
-        }
-*/
 
-/*
         val args = arguments
         if (args != null){
-            val name = args!!.getString("name")
             val email = args!!.getString("email")
 
-            txtNombreUsuario.setText(name)
+            root.txtNombreUsuario.setText(email)
 
         }
+        return root
 
- */
+
 
     }
 

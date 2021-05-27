@@ -30,6 +30,7 @@ class Fragment_config : Fragment() {
             param2 = it.getString(ARG_PARAM2)
         }
 
+
         //btn_cerrar.setOnClickListener {
         //    finish()
         //}

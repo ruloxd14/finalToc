@@ -94,39 +94,39 @@
         />
 
     <TableLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="124dp"
         android:layout_gravity="center_vertical"
-        android:layout_marginHorizontal="55dp">
+        android:layout_marginHorizontal="15dp">
 
         <TableRow>
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="83dp"
                 android:layout_height="match_parent"
                 android:scaleType="centerInside"
-                android:src="@drawable/elipse" />
+                android:src="@drawable/insignia1" />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/elipse" />
-
-            <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="86dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/elipse" />
+                android:src="@drawable/insignia_defecto" />
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/insignia_defecto" />
+
+            <ImageView
+                android:layout_width="86dp"
                 android:layout_height="130dp"
                 android:layout_marginLeft="5dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/elipse" />
+                android:src="@drawable/insignia_defecto" />
         </TableRow>
 
 
@@ -134,6 +134,7 @@
     </TableLayout>
 
     <TextView
+        android:id="@+id/idVerInsignias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"

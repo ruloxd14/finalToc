@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalToc">
-        <activity android:name=".addNotesActivity"></activity>
+        <activity android:name=".Insignia_main"></activity>
+        <activity android:name=".addNotesActivity" />
         <activity android:name=".Nota_main" />
         <activity android:name=".Restablecer_contrasena" />
         <activity android:name=".Registro" />

@@ -58,6 +58,8 @@
     <string name="facebook_app_id">1231044950683941</string>
     <string name="fb_login_protocol_scheme">fb1231044950683941</string>
     <string name="menu_notas">Notas</string>
+    <string name="menu_extras">extras</string>
+    <string name="insignias">Insignias</string>
 
 
 </resources>

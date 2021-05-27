@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/azulBajo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/insignia_img"
+        android:layout_width="72dp"
+        android:paddingTop="1dp"
+        android:layout_height="72dp"
+        android:src="@drawable/insignia1"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/insignia_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:textColor="@color/azulFuerte"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text= "Insignia"
+            />
+
+        <TextView
+            android:id="@+id/insignia_description"
+            android:layout_width="225dp"
+            android:layout_height="77dp"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"
+            android:text="descripción insignia" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

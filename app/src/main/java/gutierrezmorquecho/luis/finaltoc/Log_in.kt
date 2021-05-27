@@ -157,26 +157,22 @@ public class Log_in : AppCompatActivity() {
 
         if(account!=null){
 
-            val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra("name", account.displayName)
+            val intent = Intent(this, HomeFragment::class.java)
             intent.putExtra("email", account.email)
             startActivityForResult(intent, COD_LOGOUT)
         }
     }
 
     //Metodo en el que se supone que sirve para pasar datos de un Activity a un Fragmento
-    fun newInstance(index: Int, account: GoogleSignInAccount?): HomeFragment? {
+    fun newInstance(account: GoogleSignInAccount?): HomeFragment? {
         val f = HomeFragment()
         // Supply index input as an argument.
         val args = Bundle()
-        //args.putInt("index", index)
         if (account != null) {
             args.putString("name", account.displayName)
             args.putString("email", account.email)
             f.setArguments(args)
         }
-
-
         return f
     }
 }

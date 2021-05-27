@@ -36,7 +36,32 @@
         android:id="@+id/navigation_notifications"
         android:name="gutierrezmorquecho.luis.finaltoc.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_notifications">
+        <action
+            android:id="@+id/nav_notification_to_arteActividades"
+            app:destination="@+id/nav_arteActividades"
+            app:popUpTo="@id/navigation_notifications" />
+    </fragment>
+    <!--Nuevo fragmento que se integró-->
+    <fragment
+        android:id="@+id/nav_arteActividades"
+        android:name="gutierrezmorquecho.luis.finaltoc.Fragment_material_extra_arte_actividades"
+        android:label="@string/menu_extras"
+        tools:layout="@layout/fragment_material_extra_arte_actividades" >
+        <action
+            android:id="@+id/nav_arteActividades_to_descargaDibujo"
+            app:destination="@+id/nav_arteActividades_descarga"
+            app:popUpTo="@id/nav_arteActividades" />
+    </fragment>
+    <!--Nuevo fragmento que se integró-->
+
+    <fragment
+        android:id="@+id/nav_arteActividades_descarga"
+        android:name="gutierrezmorquecho.luis.finaltoc.Fragment_material_extra_arte_actividad"
+        android:label="@string/configuracion"
+        tools:layout="@layout/fragment_material_extra_arte_actividad" />
+
+
 
     <fragment
         android:id="@+id/navigation_configuracion"

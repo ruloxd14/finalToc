@@ -9,6 +9,7 @@ import java.io.*
 
 class Nota_main : AppCompatActivity() {
 
+
     private var notes = ArrayList<Nota>()
     private lateinit var notesAdapter: AdapterNotes
 

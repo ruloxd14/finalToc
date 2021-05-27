@@ -7,15 +7,26 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_add_notes.*
 import java.io.File
 import java.io.FileOutputStream
 
 class addNotesActivity : AppCompatActivity() {
+
+    private lateinit var storage: FirebaseFirestore
+    private lateinit var usuario : FirebaseAuth
+
     private final var REQUEST_CODE=235
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_notes)
+
+        //conexion a la BD
+        storage = FirebaseFirestore.getInstance()
+        //Conexión al usuario
+        usuario= FirebaseAuth.getInstance()
 
         btnGuardar_addNotes.setOnClickListener {
             save_note()
@@ -59,10 +70,31 @@ class addNotesActivity : AppCompatActivity() {
                 var archivo = File(ubicacion(), titulo + ".txt")
                 val fos = FileOutputStream(archivo)
                 fos.write(cuerpo.toByteArray())
+
+                val nota = hashMapOf(
+                    "title" to titulo,
+                    //"contenido" to cuerpo.toString(),
+                    "contenido" to cuerpo,
+                    //"email" to usuario.currentUser.email.toString())
+                    "email" to usuario.currentUser!!.email.toString())
+
+
+                Toast.makeText(baseContext, nota.toString(), Toast.LENGTH_SHORT).show()
+                //conexión al catalogo de firebase
+                storage.collection("notas")
+                    .add(nota.toString())
+                    .addOnSuccessListener {
+                        Toast.makeText(this, "Nota Agregada", Toast.LENGTH_SHORT).show()
+                    }
+                    .addOnFailureListener {
+                        Toast.makeText(this, "Error: intente de nuevo", Toast.LENGTH_SHORT).show()
+                    }
+
+                //Toast.makeText(this, "Se guardó correctamente", Toast.LENGTH_SHORT).show()
                 fos.close()
-                Toast.makeText(this, "Se guardó correctamente", Toast.LENGTH_SHORT).show()
+
             } catch (e: Exception) {
-                Toast.makeText(this, "Error, no se ha podido guardar el archiso", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Error, no se ha podido guardar la nota", Toast.LENGTH_SHORT).show()
             }
         }
         onBackPressed()
