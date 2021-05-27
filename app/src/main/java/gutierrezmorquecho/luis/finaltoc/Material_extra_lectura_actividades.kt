@@ -11,7 +11,7 @@ class Material_extra_lectura_actividades : AppCompatActivity() {
         setContentView(R.layout.activity_material_extra_lectura_actividades)
 
         idLeerPaco.setOnClickListener {
-            var intent: Intent = Intent(this, Material_extra_fisico_actividad::class.java)
+            var intent: Intent = Intent(this, Material_extra_lectura_actividad::class.java)
             startActivity(intent)
         }
 

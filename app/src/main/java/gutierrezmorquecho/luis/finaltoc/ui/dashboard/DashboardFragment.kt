@@ -5,11 +5,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import gutierrezmorquecho.luis.finaltoc.Horario_dia
+import gutierrezmorquecho.luis.finaltoc.Horario_semana
 import gutierrezmorquecho.luis.finaltoc.Material_extra_arte_actividades
 import gutierrezmorquecho.luis.finaltoc.R
 import gutierrezmorquecho.luis.finaltoc.databinding.FragmentDashboardBinding
@@ -34,8 +36,28 @@ class DashboardFragment : Fragment() {
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val myIntent = Intent(activity, Horario_dia::class.java)
-        requireActivity().startActivity(myIntent)
+        root.findViewById<Button>(R.id.botonsemana1)?.setOnClickListener {
+            val myIntent = Intent(activity, Horario_semana::class.java)
+            requireActivity().startActivity(myIntent)
+        }
+        root.findViewById<Button>(R.id.botonsemana2)?.setOnClickListener {
+            val myIntent = Intent(activity, Horario_semana::class.java)
+            requireActivity().startActivity(myIntent)
+        }
+        root.findViewById<Button>(R.id.botonsemana3)?.setOnClickListener {
+            val myIntent = Intent(activity, Horario_semana::class.java)
+            requireActivity().startActivity(myIntent)
+        }
+        root.findViewById<Button>(R.id.botonsemana4)?.setOnClickListener {
+            val myIntent = Intent(activity, Horario_semana::class.java)
+            requireActivity().startActivity(myIntent)
+        }
+
+        root.findViewById<Button>(R.id.botonsemana5)?.setOnClickListener {
+            val myIntent = Intent(activity, Horario_semana::class.java)
+            requireActivity().startActivity(myIntent)
+        }
+
 
         //val textView: TextView = binding.textDashboard
         //dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
