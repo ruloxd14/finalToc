@@ -1,5 +1,6 @@
 package gutierrezmorquecho.luis.finaltoc.ui.dashboard
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import gutierrezmorquecho.luis.finaltoc.Horario_dia
+import gutierrezmorquecho.luis.finaltoc.Material_extra_arte_actividades
 import gutierrezmorquecho.luis.finaltoc.R
 import gutierrezmorquecho.luis.finaltoc.databinding.FragmentDashboardBinding
 
@@ -30,6 +33,9 @@ class DashboardFragment : Fragment() {
 
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val myIntent = Intent(activity, Horario_dia::class.java)
+        requireActivity().startActivity(myIntent)
 
         //val textView: TextView = binding.textDashboard
         //dashboardViewModel.text.observe(viewLifecycleOwner, Observer {

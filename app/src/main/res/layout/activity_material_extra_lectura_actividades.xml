@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_arteActividades"
-    android:background="@color/azulBajo"
     android:orientation="vertical"
+    android:background="@color/azulBajo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment_material_extra_arte_actividades">
+    tools:context=".Material_extra_lectura_actividades">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:id="@+id/horario_semana"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/arte"
+        android:text="@string/lectura"
         android:textStyle="bold"
         android:textColor="@color/azulFuerte"
         android:textSize="40sp"
@@ -33,7 +33,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/dibujo"
+                android:text="@string/paco"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
@@ -51,7 +51,7 @@
             <TextView
                 android:layout_width="249dp"
                 android:layout_height="100dp"
-                android:text="@string/dibujoact"
+                android:text="@string/pacoact"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textStyle="bold"
@@ -61,7 +61,7 @@
         </TableRow>
         <TableRow>
             <TextView
-                android:id="@+id/verMasExtraDibujo"
+                android:id="@+id/idLeerPaco"
                 android:layout_width="249dp"
                 android:layout_height="100dp"
                 android:text="@string/ver"
@@ -82,15 +82,15 @@
         android:layout_width="318dp"
         android:layout_height="220dp"
         android:background="@drawable/round_button_base"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="43dp"
         android:layout_marginStart="49dp"
         android:layout_marginEnd="49dp">
         <TableRow>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/baile"
-                android:textSize="20sp"
+                android:text="@string/cuento"
+                android:textSize="17sp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:layout_marginStart="24dp"
@@ -107,7 +107,7 @@
             <TextView
                 android:layout_width="249dp"
                 android:layout_height="100dp"
-                android:text="@string/baileact"
+                android:text="@string/cuentoact"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textStyle="bold"
@@ -132,5 +132,4 @@
 
 
     </TableLayout>
-
-</FrameLayout>
+</LinearLayout>

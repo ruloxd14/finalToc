@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_arteActividades"
+    android:background="@color/azulBajo"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Material_extra_arte_actividades">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/horario_semana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/arte"
+        android:textStyle="bold"
+        android:textColor="@color/azulFuerte"
+        android:textSize="40sp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="216dp"
+        />
+
+    <TableLayout
+        android:layout_width="318dp"
+        android:layout_height="220dp"
+        android:background="@drawable/round_button_base"
+        android:layout_marginTop="43dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp">
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dibujo"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="7dp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="3dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="249dp"
+                android:layout_height="100dp"
+                android:text="@string/dibujoact"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="7dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/verMasExtraDibujo"
+                android:layout_width="249dp"
+                android:layout_height="100dp"
+                android:text="@string/ver"
+                android:clickable="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="7dp"/>
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="318dp"
+        android:layout_height="220dp"
+        android:background="@drawable/round_button_base"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp">
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/baile"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="7dp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="3dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="249dp"
+                android:layout_height="100dp"
+                android:text="@string/baileact"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="7dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="249dp"
+                android:layout_height="100dp"
+                android:text="@string/ver"
+                android:clickable="true"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="7dp"/>
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</RelativeLayout>
